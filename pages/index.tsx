@@ -24,28 +24,14 @@ const Home: NextPage = () => {
     { image: 'client-5.png', alt: 'alitalia' },
   ];
   return (
-    <div>
-      <Head>
-        <title>Travel Agency</title>
-        <meta name="description" content="travel app, booking app, life app, aplikasi jalan - jalan, dan sebagainya" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <link rel="icon" href="/favicon.ico" />
-        {/* Meta Tag */}
-        <meta property="og:url" content="https://next-travel-agency.vercel.app/" />
-        <meta property="og:type" content="website" />
-        <meta property="og:title" content="Jadoo Travel Agency" />
-        <meta
-          property="og:description"
-          content="travel app, booking app, life app, aplikasi jalan - jalan, dan sebagainya"
-        />
-        <meta property="og:image" content="https://next-travel-agency.vercel.app/jadoo-travel-agency.jpg" />
-      </Head>
+    <div className='mt-50'>
+   
       {/* Header */}
       <div className="absolute z-20 w-full py-6 lg:z-10 lg:py-12">
         <Header />
       </div>
       {/* Section Hero */}
-      <section className="relative mb-28">
+      <section className="relative mb-28" >
         <span className="absolute right-0 top-0 bottom-0 h-screen w-5/12 ">
           <DecorHero className="fill-accent-3" />
         </span>

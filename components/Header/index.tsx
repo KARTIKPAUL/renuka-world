@@ -12,9 +12,9 @@ export default function Header() {
   }, [setMenu]);
 
   return (
-    <header className="mx-auto max-w-full px-4 lg:max-w-7xl">
+    <header className="mx-auto max-w-full px-4 lg:max-w-7xl mb-30">
       <div className="flex items-center justify-between">
-        <div className="w-28">
+        <div className="w-28 mb-30">
           <Logo className="logo-style-1" />
         </div>
         <button
@@ -35,6 +35,11 @@ export default function Header() {
           })}
         >
           <ul className="flex flex-col items-center gap-y-6 lg:flex-row lg:gap-y-0">
+          <li>
+              <Link href="/Home">
+                <a className="px-9 text-accent-1 lg:text-gray-800">Home</a>
+              </Link>
+            </li>
             <li>
               <Link href="/destination">
                 <a className="px-9 text-accent-1 lg:text-gray-800">Destinations</a>
